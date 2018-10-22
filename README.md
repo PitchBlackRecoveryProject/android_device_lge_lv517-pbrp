@@ -1,1 +1,1 @@
-# Twrp Build Tree For Lg Stylo 2 Plus
+# Twrp Build Tree For LG K20 Plus

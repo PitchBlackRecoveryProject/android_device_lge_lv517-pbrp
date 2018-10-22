@@ -14,5 +14,5 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/cm.mk \
-	$(LOCAL_DIR)/full_ph2n.mk
+	$(LOCAL_DIR)/omni_lv517.mk \
+	$(LOCAL_DIR)/full_lv517.mk
