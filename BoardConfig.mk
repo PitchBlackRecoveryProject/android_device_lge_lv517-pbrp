@@ -51,17 +51,17 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-# TARGET_KERNEL_APPEND_DTB := true
+TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/lge/sd4xx-common
-TARGET_KERNEL_CONFIG := lv517_defconfig
+# KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
+# TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+# TARGET_KERNEL_SOURCE := kernel/lge/sd4xx-common
+# TARGET_KERNEL_CONFIG := lv517_defconfig
 
 USE_CLANG_PLATFORM_BUILD := true
 
-# TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
 # Init
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
