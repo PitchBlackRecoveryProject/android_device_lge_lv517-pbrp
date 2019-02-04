@@ -10,9 +10,6 @@
 /cache             ext4    /dev/block/bootdevice/by-name/cache        flags=backup=1;display="Cache"
 /data              ext4    /dev/block/bootdevice/by-name/userdata     length=-16384;flags=backup=1;display="Data"
 /system            ext4    /dev/block/bootdevice/by-name/system       flags=backup=1;flashimg=1;display="System"
-/system_image      emmc    /dev/block/bootdevice/by-name/system
-/vendor            ext4    /dev/block/bootdevice/by-name/vendor       flags=wipeingui;display="Vendor"
-/vendor_image      emmc    /dev/block/bootdevice/by-name/vendor
 /boot              emmc    /dev/block/bootdevice/by-name/boot         flags=display="Boot";backup=1
 /recovery          emmc    /dev/block/bootdevice/by-name/recovery     flags=display="Recovery";backup=1
 /misc              emmc    /dev/block/bootdevice/by-name/misc         flags=backup=1;display="Misc"
